@@ -1,16 +1,16 @@
 body{
-    /* background-image: url('https://i.pinimg.com/originals/11/c2/38/11c238c51c94fbf822ae0fc6acc88c58.gif'); */
-    background-size: contain;
+    /* background-image: url('https://www.icegif.com/wp-content/uploads/2023/06/icegif-1126.gif'); */
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: black;
 }
 .count {
-    margin-top: 15rem;
+    /* margin-top: 15rem; */
     width: 60px;
     height: 60px;
-    background-color: rgb(59, 147, 107);
+    background-color: white;
     color: black;
     border-radius: 1rem;
     display: flex;
@@ -43,7 +43,7 @@ button{
     width: 5rem;
     border: none;
     margin: 2px;
-    background-color: rgb(59, 147, 107);;
+    background-color: rgb(255, 255, 255);;
     color: black;
     cursor: pointer;
     font-weight: bold;
@@ -94,13 +94,26 @@ header{
     color: black;
     font-family: sans-serif;
     font-weight: bold;
-    background-color: rgb(59, 147, 107);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 1rem;
-    width: 20%;
-    height: 30px;
+    width: 25%;
+    height: 35px;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0 auto;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.counter-title{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    padding-top: 10rem;
+}
+.projects{
+    color: white;
 }
