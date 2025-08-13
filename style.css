@@ -1,0 +1,106 @@
+body{
+    /* background-image: url('https://i.pinimg.com/originals/11/c2/38/11c238c51c94fbf822ae0fc6acc88c58.gif'); */
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.count {
+    margin-top: 15rem;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(59, 147, 107);
+    color: black;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;     
+    align-items: center;         
+    margin-left: auto;
+    margin-right: auto;          
+    font-weight: bold;           
+    font-size: 1.5rem;  
+}
+    @keyframes pulse {
+        0%{
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.3);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }         
+
+.count.pulse{
+    animation: pulse 0.3s ease;
+}
+
+button{
+    border-radius: 1rem;
+    padding: 10px;
+    width: 5rem;
+    border: none;
+    margin: 2px;
+    background-color: rgb(59, 147, 107);;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+}
+button:hover{
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+button:active{
+    transform: scale(0.95);
+}
+.game{
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+.game-title{
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+.result{
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 1rem;
+}
+.score-board{
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+    padding: 5px;
+}
+.game-buttons{
+    display: flex;
+    justify-content: center;
+}
+header{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgb(59, 147, 107);
+    text-align: center;
+    border-radius: 1rem;
+    width: 20%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
