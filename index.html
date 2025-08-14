@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="title">
     <header>weird website</header>
     <h1 class="counter-title">Simple click counter</h1>
     <p class="projects">projects</p>
     <p class="count">0</p>
+    </div>
     <div class="btn-group">
-        <button>+1</button>
+        <button class="plus">&#x002B;</button>
         <button class="btn">reset</button>
-        <button class="sndbtn">-1</button>
+        <button class="sndbtn">&#x002D;</button>
     </div>
     <section class="game">
     <div class="game-title">
@@ -31,6 +33,24 @@
         Your score: <span id="user-score">0</span>
         Computer score: <span id="computer-score">0</span>
     </p>
+    </section>
+    <section class="feedback" id="feedback">
+        <h1 class="heading">feedback UI</h1>
+        <div class="rating-container" id="rating-container">
+            <div class="rating">
+            <span>&#x2639;</span>
+            <small>Unhappy</small>
+            </div>
+            <div class="rating">
+                <span>&#x1F610;</span>
+                <small>Neutral</small>
+            </div>
+            <div class="rating">
+                <span>&#x263B;</span>
+                <small>Satisfied</small>
+            </div>
+        </div>
+        <button class="feedback-button" id="feedback-button">Send Review</button>
     </section>
     <script src="script.js"></script>
 </body>
