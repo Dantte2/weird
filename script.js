@@ -14,6 +14,12 @@ const playerScoreE1 = document.getElementById("user-score");
 
 const computerScoreE1 = document.getElementById("computer-score");
 
+const feedBackE1 = document.getElementById("feedback");
+
+const ratingE1 = document.querySelectorAll(".rating");
+
+const buttonE5 = document.getElementById("feedback-button");
+
 let playerScore = 0;
 let computerScore = 0;
 
