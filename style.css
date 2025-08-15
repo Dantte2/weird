@@ -1,5 +1,5 @@
 body{
-    /* background-image: url('https://www.icegif.com/wp-content/uploads/2023/06/icegif-1126.gif'); */
+    background-image: url('https://www.icegif.com/wp-content/uploads/2023/06/icegif-1126.gif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -142,16 +142,16 @@ header{
     font-size: 20px;
 }
 .feedback{
-    /* background: black; */
+    background: rgb(224, 194, 194);
     box-shadow: 0 5px 10px black;
     border-radius: 10px;
-    padding: 20px;
     width: 85%;
     max-width: 400px;
     text-align: center;
     font-size: 20px;
-    margin-left: 30%;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .heading{
     margin: 5px;

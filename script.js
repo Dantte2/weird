@@ -20,10 +20,38 @@ const ratingE1 = document.querySelectorAll(".rating");
 
 const buttonE5 = document.getElementById("feedback-button");
 
+let selectedRating = "";
 let playerScore = 0;
 let computerScore = 0;
-
 var clicks = 0;
+
+ratingE1.forEach((ratingEl) => {
+  ratingEl.addEventListener("click", (event) => {
+    removeActive();
+    selectedRating = event.target.innerText || event.target.parentNode.innerText;
+    event.target.classList.add("active");
+    event.target.parentNode.classList.add("active"); 
+  });
+});
+
+buttonE5.addEventListener("click", () => {
+  if (selectedRating !== "") {
+    feedBackE1.innerHTML = `
+      <strong>Thank you!</strong><br><br>
+      <strong>Feedback: ${selectedRating}</strong>
+      <p>We'll use your feedback to improve our customer support.</p>
+    `;
+  } else {
+    alert("Please select a rating before submitting.");
+  }
+});
+
+function removeActive() {
+  ratingE1.forEach((ratingEl) => {
+    ratingEl.classList.remove("active");
+  });
+}
+
 
 
 buttonE4.addEventListener('click', function(event) {
